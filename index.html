@@ -6,24 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/base.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
-
 </head>
 
+<!-- *: REMEMBER TO ADD IN BASE.CSS TO EVERY PROJECT BEFORE MAIN STYLESHEET/S -->
+
 <body>
+
   <header>
     <h1>
       Brux
     </h1>
     <div class="face">
-      <img src="assets/face.svg">
+      <img src="assets/face-without-eyes.svg">
+      <!-- eyeball left -->
+      <div class="iris iris-left">
+        <div></div>
+      </div>
+      <!-- eyeball right -->
+      <div class="iris iris-right">
+        <div></div>
+      </div>
     </div>
+
     <nav>
       <a href="products.html">Products</a>
       <a href="how-it-works.html">How it works</a>
       <a href="results.html">Results</a>
     </nav>
-
   </header>
 
   <section class="hero">
@@ -61,7 +72,7 @@
     </div>
   </section>
 
-
+  <script src="eyes.js"></script>
   <script src="header.js"></script>
   <script src="animation.js"></script>
 

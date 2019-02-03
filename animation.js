@@ -20,10 +20,13 @@ const fadeIn = function () {
 
     // console.log(tagTop, tagBottom)
 
-    if (tagTop < window.innerHeight) {
+    if (tagTop < window.innerHeight && tagBottom > 0) {
       // keep the s because we want it to be a second
       tag.style.animation = `fadeIn 1s ${delay}s both`
       delay = delay + 0.25
+    } else {
+      tag.style.opacity = 0
+      tag.style.animation = ""
     }
   })
 }
